@@ -1,7 +1,29 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // 🔥 Force Webpack instead of Turbopack
+  experimental: {
+    webpackBuildWorker: true,
+  },
+
+  webpack(config) {
+    // Remove Next.js built-in SVG loader
+    config.module.rules = config.module.rules.map((rule: any) => {
+      if (rule.test && rule.test.toString().includes("svg")) {
+        return { ...rule, exclude: /\.svg$/i };
+      }
+      return rule;
+    });
+
+    // Add SVGR loader
+    config.module.rules.push({
+      test: /\.svg$/i,
+      issuer: /\.[jt]sx?$/,
+      use: ["@svgr/webpack"],
+    });
+
+    return config;
+  },
 };
 
 export default nextConfig;

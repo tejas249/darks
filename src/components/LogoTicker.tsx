@@ -15,5 +15,7 @@ const images = [
 ];
 
 export const LogoTicker = () => {
-  return null;
+  return <>
+     
+  </>;
 };

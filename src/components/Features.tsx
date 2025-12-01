@@ -28,7 +28,7 @@ export const Features = () => {
           one place. Get reminders and see your progress simply and quickly.
         </p>
 
-        <div className="mt-16 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-16 grid gap-10 sm:grid-cols-2 lg:grid-cols-3 hover:cursor-pointer">
           {features.map(({ title, description }) => (
             <div
               key={title}

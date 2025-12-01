@@ -55,7 +55,7 @@ export const Hero = () => {
         </div>
 
         <div className="flex justify-center">
-          <button className="bg-white text-black py-3 px-8 rounded-full font-semibold text-base sm:text-lg hover:bg-gray-100 transition-transform active:scale-95 shadow-lg">
+          <button className="bg-white text-black py-3 px-8 rounded-full font-semibold text-base sm:text-lg hover:bg-gray-100 transition-transform active:scale-95 shadow-lg hover:cursor-pointer">
             Get for Free
           </button>
         </div>

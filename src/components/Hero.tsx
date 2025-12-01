@@ -9,9 +9,9 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,var(--tw-gradient-stops))] from-purple-900 via-[#120428] to-black opacity-90"></div>
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-purple-600/20 blur-[120px] rounded-full pointer-events-none"></div>
 
-      <div className="relative z-10 container mx-auto px-4 pt-20 pb-32 sm:pt-28 sm:pb-40 text-center">
+      <div className="relative z-10 container mx-auto px-4 pt-20 pb-10 sm:pt-28 sm:pb-16 text-center">
 
-        <div className="flex justify-center mb-8">
+        <div className="flex justify-center mb-6">
           <a
             href="#"
             className="inline-flex items-center gap-2 py-2 px-4 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm transition-all hover:bg-white/10"
@@ -26,7 +26,7 @@ export const Hero = () => {
         </div>
 
         <div className="relative flex justify-center">
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-white mb-6 drop-shadow-lg relative inline-block">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-white mb-4 drop-shadow-lg relative inline-block">
             One Task at a Time
           </h1>
 
@@ -35,7 +35,7 @@ export const Hero = () => {
             alt=""
             width={180}
             height={180}
-            className="absolute left-0 -translate-x-1/2 top-1/2 -translate-y-1/2 w-20 sm:w-28 md:w-36 pointer-events-none"
+            className="hidden lg:block absolute left-0 -translate-x-1/2 top-1/2 -translate-y-1/2 w-20 sm:w-28 md:w-36 pointer-events-none"
           />
 
           <Image
@@ -43,12 +43,12 @@ export const Hero = () => {
             alt=""
             width={180}
             height={180}
-            className="absolute right-0 translate-x-1/2 top-1/2 -translate-y-1/2 w-20 sm:w-28 md:w-36 pointer-events-none"
+            className="hidden lg:block absolute right-0 translate-x-1/2 top-1/2 -translate-y-1/2 w-20 sm:w-28 md:w-36 pointer-events-none"
           />
         </div>
 
         <div className="flex justify-center">
-          <p className="text-lg sm:text-xl md:text-2xl text-white/70 max-w-3xl mx-auto leading-relaxed mb-10">
+          <p className="text-lg sm:text-xl md:text-2xl text-white/70 max-w-3xl mx-auto leading-relaxed mb-8">
             Celebrate the joy of accomplishments with an app designed to track
             progress, motivate your efforts and celebrate success.
           </p>
@@ -63,8 +63,7 @@ export const Hero = () => {
 
       <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
         <svg
-          className="relative block w-full h-[100px] sm:h-[150px] md:h-[200px]"
-          data-name="Layer 1"
+          className="relative block w-full h-[60px] sm:h-20 md:h-[100px]"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
           preserveAspectRatio="none"
@@ -75,7 +74,8 @@ export const Hero = () => {
           ></path>
         </svg>
       </div>
-      <div className="bg-black h-24 w-full"></div>
+
+      <div className="bg-black h-12 w-full"></div>
     </div>
   );
 };

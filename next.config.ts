@@ -14,7 +14,7 @@ const nextConfig: NextConfig = {
       return rule;
     });
 
-    // Add SVGR loader
+  
     config.module.rules.push({
       test: /\.svg$/i,
       issuer: /\.[jt]sx?$/,

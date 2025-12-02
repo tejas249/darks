@@ -10,12 +10,12 @@ export const Footer = () => {
 
         <div className="flex flex-col items-center justify-center gap-6">
 
-          {/* Text */}
+        
           <div className="text-white/60 text-sm">
             © 2025 <span className="text-white font-medium">Tejas</span> — All Rights Reserved
           </div>
 
-          {/* Social Icons */}
+       
           <ul className="flex items-center gap-5">
             <li>
               <a href="#" className="group">
